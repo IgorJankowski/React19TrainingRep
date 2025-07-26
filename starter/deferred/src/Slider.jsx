@@ -1,9 +1,9 @@
-export default function Slider({ value, deffered, onChange, name, max }) {
+export default function Slider({ value, deferred, onChange, name, max }) {
   return (
     <li className="slider">
       <label htmlFor={name}>
         {name}
-        {value !== deffered ? "(Updating)" : ""}
+        {value !== deferred ? "(Updating)" : ""}
       </label>
       <input
         type="range"
@@ -12,10 +12,10 @@ export default function Slider({ value, deffered, onChange, name, max }) {
         min="0"
         max={max}
         value={value}
-        onChange={onchange}
+        onChange={onChange}
       ></input>
       <output htmlFor="name">
-        Value: {value} | Deffered value: {deferred}
+        Value: {value} | Deferred value: {deferred}
       </output>
     </li>
   );
