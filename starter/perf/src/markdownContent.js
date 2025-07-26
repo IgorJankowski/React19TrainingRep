@@ -1,4 +1,4 @@
-const markdownContent = `
+export const markdownContent = `
 # The Developer's Guide to Sanity (or Lack Thereof)
 
 ## Introduction: Why We Choose Pain
